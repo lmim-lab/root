@@ -128,6 +128,29 @@
             color: #27ae60;
             margin-bottom: 10px;
         }
+             .instagram-follow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 16px;
+            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .instagram-follow:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        
+        .instagram-follow i {
+            font-size: 1.2em;
+        }
     </style>
 </head>
 <body> 
@@ -165,10 +188,11 @@
     <section class="container" id="about">
         <h2>About L.M.I.M</h2>
         <p>The Laborat&oacuterio de Materiais e Interfaces Moleculares (L.M.I.M) at the University of S&atildeo Paulo is dedicated to exploring the fundamental and applied aspects of molecular interfaces and materials science. It is located on the Ribeir&atildeo Preto Campus, 300 km from the state capital. Find us on Instagram at @usp_lmim and on Google Earth: <strong>21&deg10'4.24"S 47&deg50'54.68"O</strong></p></p>
-       Follow us on Instagram 
-        <a href="https://instagram.com/usp_lmim" target="_blank" style="display:inline-block; width:40px; height:40px; background:#e1306c; color:white; text-align:center; line-height:40px; border-radius:8px; font-size:20px; text-decoration:none;">
-    <img src="ig.png" alt="Follow us on Instagram"/>
-  </a>
+        
+       <a href="https://www.instagram.com/usp_lmim" class="instagram-follow" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-instagram"></i>
+        <span>Follow us</span>
+    </a>
     </section>
     <section class="container" id="research">
         <h2>Research Focus</h2>
